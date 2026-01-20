@@ -45,7 +45,7 @@ class Config:
     gemini_model_fallback: str = "gemini-2.5-flash"  # 备选模型
     
     # Gemini API 请求配置（防止 429 限流）
-    gemini_request_delay: float = 2.0  # 请求间隔（秒）
+    gemini_request_delay: float = 5.0  # 请求间隔（秒）
     gemini_max_retries: int = 5  # 最大重试次数
     gemini_retry_delay: float = 5.0  # 重试基础延时（秒）
     
